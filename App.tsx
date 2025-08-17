@@ -21,7 +21,7 @@ const App: React.FC = () => {
 
   const Header = () => (
     <header className="w-full text-center py-8 bg-white shadow-lg border-b-4 border-brand-light">
-      <h1 className="text-5xl font-serif text-brand-dark">Fridge Feaster</h1>
+      <h1 className="text-5xl font-serif text-brand-dark">PantryPal</h1>
       <p className="text-lg text-gray-600 mt-2">Your AI Sous-Chef for Smart Cooking</p>
     </header>
   );
@@ -75,7 +75,7 @@ const App: React.FC = () => {
         )}
       </main>
       <footer className="text-center py-6 text-gray-500 text-sm">
-        <p>Crafted with ❤️ by Fridge Feaster AI</p>
+        <p>Crafted with ❤️ by PantryPal AI</p>
       </footer>
     </div>
   );

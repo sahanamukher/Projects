@@ -37,6 +37,13 @@ export interface FeastFormData {
     cuisine: string;
     allergies: string[];
     otherAllergies: string;
+    // Fields for inventory check
+    vegetables: ImageFile[];
+    fruits: ImageFile[];
+    proteins: ImageFile[];
+    greens: ImageFile[];
+    spices: string[];
+    otherSpices: string;
 }
 
 export interface FeastMenu {
@@ -46,4 +53,19 @@ export interface FeastMenu {
     mainCourse: { name: string; description: string; };
     dessert: { name: string; description: string; };
     beverage: { name: string; description: string; };
+}
+
+export interface DetailedRecipe {
+    course: string;
+    recipeName: string;
+    description: string;
+    ingredients: string[];
+    instructions: string[];
+}
+
+export interface FeastPlan {
+    feastTitle: string;
+    feastDescription: string;
+    recipes: DetailedRecipe[];
+    missingItems: string[];
 }
